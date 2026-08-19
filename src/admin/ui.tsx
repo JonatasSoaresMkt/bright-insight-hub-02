@@ -97,8 +97,8 @@ export function SectionCard({
 }
 
 const toneMap: Record<string, string> = {
-  success: "bg-primary-light text-primary border-transparent",
-  warning: "bg-warning-light text-warning border-transparent",
+  success: "bg-primary/10 text-primary border-transparent",
+  warning: "bg-warning/10 text-warning border-transparent",
   danger: "bg-destructive/10 text-destructive border-transparent",
   neutral: "bg-muted text-muted-foreground border-transparent",
 };
