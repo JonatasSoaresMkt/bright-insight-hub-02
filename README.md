@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# Remix of Cash Flow Dashboard
 
-## Project info
+Please use the attached design recreated exactly as it is shown in the screenshot with the following functionality: 
 
-**URL**: https://lovable.dev/projects/26be6016-e644-4e9a-b5e9-98883c4f9cda
 
-## How can I edit this code?
+Sidebar Structure
+Overview
+Revenue
+Expenses
+Profitability
+Cash Flow
+Accounts Receivable / Payable
+Forecast & Planning (AI can be used here)
+KPIs & Ratios (this can be premium functionality)
+Reports / Export
+Each tab should allow users to select a reporting period (day, week, month, quarter, year).
+ Filters: by project, department, product, region, сurrency (if multi-currency is supported).
 
-There are several ways of editing your application.
 
-**Use Lovable**
+Content by Section
+Overview
+Key metrics (Revenue, Expenses, Profit, Cash Flow).
+Dynamics (line chart of revenue and profit).
+% growth/decline vs another period (e.g., last quarter or year – configurable).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/26be6016-e644-4e9a-b5e9-98883c4f9cda) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+Revenue
+Revenue by products/services.
+Revenue by region / sales channel.
+MRR/ARR trend (if SaaS).
+Top 10 clients by revenue (could be premium, since it’s not the most critical info).
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Expenses
+Total expenses by category (OPEX, COGS, marketing, salaries).
+Expense trends (increase/decrease).
+Actual vs budget comparison (could be premium).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+Profitability
+Gross / Operating / Net profit.
+Margin % at each level.
+Break-even analysis.
+Profitability by segment (if multiple business lines).
+
+
+Cash Flow
+(could be combined with another section to save space)
+Incoming vs outgoing cash flow.
+Account balances.
+Burn rate (especially relevant for startups).
+Runway (how many months of cash remain).
+
+
+Accounts Receivable / Payable
+Receivables: total, overdue, DSO (Days Sales Outstanding).
+Payables: obligations and due dates.
+Aging reports (0–30, 30–60, 60+ days).
+Alert: “20% of receivables are overdue > 60 days” (not critical functionality, since users likely already have trackers for this).
+
+
+Forecast & Planning
+(AI can be used here + recommendations, e.g., to reach a certain target you need to cut certain costs or increase sales – lots of room for creativity)
+Revenue & Cash Flow forecast (3/6/12 months).
+Scenarios: optimistic / realistic / worst-case.
+Plan vs actual.
+Rolling forecast (dynamically updated).
+
+
+KPIs & Ratios
+(as noted above, this can be premium functionality where KPIs are auto-calculated)
+CAC (Customer Acquisition Cost).
+LTV (Lifetime Value).
+ARR / MRR (if SaaS).
+Quick ratio, current ratio (liquidity).
+
+
+Reports / Export
+Financial statements (P&L, Balance Sheet, Cash Flow Statement, etc).
+Export options (PDF, Excel).
+
+For API connections, let’s add in the very bottom of the sidebar - Connect data section, once use click on it-  user will see upload CSV file or connect data via Lovable cloud, and will have an option to connect whatever he/she needs like QuickBooks, Stripe, HubSpot, etc.
+
+This project was built with [Lovable](https://lovable.dev).
+
+**Live app**: https://bright-insight-hub-02.lovable.app
+
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/247dce9a-9560-4f93-8062-c05d9807b35b).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/26be6016-e644-4e9a-b5e9-98883c4f9cda) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
